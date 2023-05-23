@@ -1,0 +1,10 @@
+@mixin onTablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+@mixin onDesktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
