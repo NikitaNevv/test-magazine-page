@@ -27,11 +27,16 @@ import SectionAside from './components/sections/SectionAside.vue'
 
 <style lang="scss" scoped>
 .page-main {
+    position: relative;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     &__header {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+        width: 100%;
         font-family: 'Open Sans', sans-serif;
         background-color: $color-main-back;
 
@@ -40,6 +45,9 @@ import SectionAside from './components/sections/SectionAside.vue'
         }
 
         &-desk {
+            position: sticky;
+            top: 0;
+            z-index: 5;
             display: none;
             font-family: 'Open Sans', sans-serif;
             background-color: $color-main-back;
@@ -51,25 +59,32 @@ import SectionAside from './components/sections/SectionAside.vue'
     }
 
     &__body {
+        position: relative;
         display: flex;
         flex-direction: column;
 
         @include onDesktop {
+            position: relative;
             display: grid;
-            grid-template-rows: 740px 1fr;
-            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-columns: 740px 1fr;
             max-width: 1070px;
+            grid-template-areas:
+                'top top '
+                'main aside'
+            ;
         }
     }
 
     &__top {
-
+        @include onDesktop {
+            grid-area: top;
+        }
     }
 
     &__wrapper {
         width: 100%;
-        max-width: 740px;
-        padding: 15px 10px;
+        padding: 0 10px;
         margin: 0 auto;
         height: 100%;
 
@@ -78,15 +93,22 @@ import SectionAside from './components/sections/SectionAside.vue'
         }
 
         @include onDesktop {
+
+            max-width: 740px;
             padding: 0;
         }
     }
 
     &__aside {
+        position: sticky;
         display: none;
+        padding-left: 30px;
 
         @include onDesktop {
+            position: sticky;
+            top: 500px;
             display: initial;
+            grid-area: aside;
         }
     }
 }

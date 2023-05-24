@@ -1,8 +1,50 @@
 <template>
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam at hic maiores natus omnis, repellendus reprehenderit tempora voluptatem? Cumque dignissimos eum ipsa laborum nostrum perferendis quia quod rem tenetur!</div>
+    <section class="section-aside">
+        <h2 class="section-aside__title">trending now</h2>
+
+        <a class="section-aside__link" href="#">
+            <img class="section-aside__link-img" src="../ui/icons/walmart.jpg" alt="image of walmart">
+
+            <span class="section-aside__link-text">
+                Walmart hiring crypto expert to develop digital currency strategy
+            </span>
+        </a>
+
+        <a class="section-aside__link" href="#">
+            <img class="section-aside__link-img" src="../ui/icons/mortgage.jpg" alt="image of house with coin">
+
+            <span class="section-aside__link-text">
+                Second-largest U.S. mortgage lender will accept payment in bitcoin
+            </span>
+        </a>
+
+        <a class="section-aside__link" href="#">
+            <img class="section-aside__link-img" src="../ui/icons/amazon-bitcoin.jpg" alt="image of amazon and bitcoin">
+
+            <span class="section-aside__link-text">
+                Amazon may soon allow users to pay in cryptocurrencies like Bitcoin
+            </span>
+        </a>
+
+        <a class="section-aside__link" href="#">
+            <img class="section-aside__link-img" src="../ui/icons/stocks.jpg" alt="image of stocks graphic">
+
+            <span class="section-aside__link-text">
+                Indian stock market turns world beaters with RBI in ‘whatever it takes’ mode
+            </span>
+        </a>
+
+        <a class="section-aside__link" href="#">
+            <img class="section-aside__link-img" src="../ui/icons/bitcoin.jpg" alt="image of bitcoin">
+
+            <span class="section-aside__link-text">
+                Bitcoin in longest winning streak in 2022 as crypto rebounds
+            </span>
+        </a>
+    </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {name: 'SectionAside'}
 </script>
 
@@ -11,5 +53,39 @@ export default {name: 'SectionAside'}
 </script>
 
 <style lang="scss" scoped>
+.section-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
+    &__title {
+       text-transform: uppercase;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Open Sans', sans-serif;
+        color: rgba(0, 0, 0, 0.8);
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:active {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        &-img {
+            width: 100px;
+            height: 75px;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
 </style>

@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: 'Open Sans', sans-serif;
-    src: url('./OpenSans-Italic.woff2') format('woff2');
+    src: url('./OpenSans-LightItalic.woff2') format('woff2');
     font-weight: 400;
     font-style: italic;
 }

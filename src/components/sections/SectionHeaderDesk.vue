@@ -48,7 +48,7 @@ import BurgerMenu from '../ui/icons/BurgerMenu.vue'
     display: flex;
     justify-content: center;
     background-color: $color-main-back;
-    width: 100vw;
+    width: 100%;
 
     &__log {
         position: absolute;

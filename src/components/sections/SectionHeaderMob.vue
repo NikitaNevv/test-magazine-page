@@ -54,7 +54,6 @@ const classes = computed(() => {
 
 <style lang="scss" scoped>
 .section-header {
-
     &__options {
         display: flex;
         justify-content: end;
@@ -68,14 +67,6 @@ const classes = computed(() => {
         font-weight: 400;
         line-height: 1;
         color: rgba(255, 255, 255, 0.81);
-
-        &:hover {
-            color: rgba(204, 204, 204, 0.8);
-        }
-
-        &:active {
-            color: rgba(163, 163, 163, 0.8);
-        }
 
         &--border {
             padding-left: 8px;
@@ -104,14 +95,6 @@ const classes = computed(() => {
     &__burger {
         align-self: center;
         color: $color-snow;
-
-        &:hover {
-            color: #cccccc;
-        }
-
-        &:active {
-            color: #a3a3a3;
-        }
     }
 
     &__nav {
@@ -130,14 +113,6 @@ const classes = computed(() => {
         &-link {
             color: $color-snow;
             text-transform: uppercase;
-
-            &:hover {
-                color: #cccccc;
-            }
-
-            &:active {
-                color: #a3a3a3;
-            }
         }
 
         &-button {
@@ -146,14 +121,6 @@ const classes = computed(() => {
             margin-bottom: 20px;
             color: $color-snow;
             text-transform: uppercase;
-
-            &:hover {
-                color: #cccccc;
-            }
-
-            &:active {
-                color: #a3a3a3;
-            }
         }
     }
 
