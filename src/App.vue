@@ -12,7 +12,7 @@
 
         <SectionAside class="page-main__aside"/>
 
-<!--        <SectionFooter/>-->
+        <SectionFooter class="page-main__footer"/>
     </div>
 </template>
 
@@ -23,6 +23,7 @@ import SectionInterview from './components/sections/SectionInterview.vue'
 import SectionTop from './components/sections/SectionTop.vue'
 import SectionAside from './components/sections/SectionAside.vue'
 import SectionOptions from './components/sections/SectionOptions.vue'
+import SectionFooter from './components/sections/SectionFooter.vue'
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +35,7 @@ import SectionOptions from './components/sections/SectionOptions.vue'
     @include onDesktop {
         position: relative;
         display: grid;
-        grid-template-rows: auto auto auto;
+        grid-template-rows: auto auto auto auto;
         grid-template-columns: 1fr 740px 330px 1fr;
         width: 100%;
     }
@@ -120,6 +121,11 @@ import SectionOptions from './components/sections/SectionOptions.vue'
         @include onTablet {
             margin-top: 50px;
         }
+    }
+
+    &__footer {
+        grid-row: 4;
+        grid-column: 1 / 5;
     }
 }
 </style>

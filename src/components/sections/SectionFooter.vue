@@ -1,5 +1,7 @@
 <template>
-    <div></div>
+    <footer class="section-footer">
+
+    </footer>
 </template>
 
 <script lang="ts">
@@ -11,5 +13,8 @@ export default {name: 'SectionFooter'}
 </script>
 
 <style lang="scss" scoped>
+.section-footer {
+    display: flex;
 
+}
 </style>
