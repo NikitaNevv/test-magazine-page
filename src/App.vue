@@ -3,17 +3,16 @@
         <SectionHeaderMob class="page-main__header"/>
         <SectionHeaderDesk class="page-main__header-desk"/>
 
+        <SectionTop class="page-main__top"/>
+
         <main class="page-main__body">
-            <SectionTop class="page-main__top"/>
-
-            <div class="page-main__wrapper">
-                <SectionInterview/>
-            </div>
-
-            <SectionAside class="page-main__aside"/>
+            <SectionInterview/>
+            <SectionOptions class="page-main__options"/>
         </main>
 
-        <SectionFooter/>
+        <SectionAside class="page-main__aside"/>
+
+<!--        <SectionFooter/>-->
     </div>
 </template>
 
@@ -23,16 +22,27 @@ import SectionHeaderDesk from './components/sections/SectionHeaderDesk.vue'
 import SectionInterview from './components/sections/SectionInterview.vue'
 import SectionTop from './components/sections/SectionTop.vue'
 import SectionAside from './components/sections/SectionAside.vue'
+import SectionOptions from './components/sections/SectionOptions.vue'
 </script>
 
 <style lang="scss" scoped>
 .page-main {
     position: relative;
     display: flex;
-    align-items: center;
     flex-direction: column;
 
+    @include onDesktop {
+        position: relative;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr 740px 330px 1fr;
+        width: 100%;
+    }
+
     &__header {
+        grid-row: 1;
+        grid-column: 1 / 5;
+        align-self: start;
         position: sticky;
         top: 0;
         z-index: 5;
@@ -45,7 +55,10 @@ import SectionAside from './components/sections/SectionAside.vue'
         }
 
         &-desk {
+            grid-row: 1;
+            grid-column: 1 / 5;
             position: sticky;
+            align-self: start;
             top: 0;
             z-index: 5;
             display: none;
@@ -62,53 +75,50 @@ import SectionAside from './components/sections/SectionAside.vue'
         position: relative;
         display: flex;
         flex-direction: column;
-
-        @include onDesktop {
-            position: relative;
-            display: grid;
-            grid-template-rows: 1fr;
-            grid-template-columns: 740px 1fr;
-            max-width: 1070px;
-            grid-template-areas:
-                'top top '
-                'main aside'
-            ;
-        }
-    }
-
-    &__top {
-        @include onDesktop {
-            grid-area: top;
-        }
-    }
-
-    &__wrapper {
         width: 100%;
         padding: 0 10px;
         margin: 0 auto;
         height: 100%;
 
         @include onTablet {
-            padding: 30px 14px;
+            padding: 0 14px;
         }
 
         @include onDesktop {
-
+            grid-row: 3;
+            grid-column: 2 / 3;
             max-width: 740px;
             padding: 0;
         }
     }
 
+    &__top {
+        @include onDesktop {
+            grid-row: 2;
+            grid-column: 2 / 4;
+        }
+    }
+
     &__aside {
-        position: sticky;
         display: none;
         padding-left: 30px;
 
         @include onDesktop {
             position: sticky;
-            top: 500px;
+            top: 150px;
             display: initial;
-            grid-area: aside;
+            grid-row: 3;
+            grid-column: 3 / 4;
+            max-width: 740px;
+            align-self: start;
+        }
+    }
+
+    &__options {
+        margin-top: 30px;
+
+        @include onTablet {
+            margin-top: 50px;
         }
     }
 }
