@@ -3,7 +3,7 @@
         <div class="block-interview-feedback__image-box">
             <img
                 class="block-interview-feedback__image"
-                src="../ui/icons/feedback.jpg"
+                src="../ui/icons/feedback.png"
                 alt="image of jake saunders"
             >
         </div>

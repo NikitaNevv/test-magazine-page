@@ -1,7 +1,7 @@
 <template>
     <section class="block-nft">
         <div class="block-nft__image-container">
-            <img class="block-nft__image" src="../ui/icons/nft-banner.jpg" alt="image of NFTs">
+            <img class="block-nft__image" src="../ui/icons/nft-banner.png" alt="image of NFTs">
         </div>
     </section>
 

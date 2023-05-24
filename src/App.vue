@@ -40,12 +40,12 @@ import SectionOptions from './components/sections/SectionOptions.vue'
     }
 
     &__header {
-        grid-row: 1;
-        grid-column: 1 / 5;
-        align-self: start;
         position: sticky;
         top: 0;
         z-index: 5;
+        grid-row: 1;
+        grid-column: 1 / 5;
+        align-self: start;
         width: 100%;
         font-family: 'Open Sans', sans-serif;
         background-color: $color-main-back;
@@ -55,13 +55,13 @@ import SectionOptions from './components/sections/SectionOptions.vue'
         }
 
         &-desk {
-            grid-row: 1;
-            grid-column: 1 / 5;
             position: sticky;
-            align-self: start;
             top: 0;
             z-index: 5;
+            grid-row: 1;
+            grid-column: 1 / 5;
             display: none;
+            align-self: start;
             font-family: 'Open Sans', sans-serif;
             background-color: $color-main-back;
 
@@ -106,7 +106,7 @@ import SectionOptions from './components/sections/SectionOptions.vue'
         @include onDesktop {
             position: sticky;
             top: 150px;
-            display: initial;
+            display: flex;
             grid-row: 3;
             grid-column: 3 / 4;
             max-width: 740px;

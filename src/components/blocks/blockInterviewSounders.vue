@@ -3,7 +3,7 @@
         <div class="block-interview-sounders__image-box">
             <img
                 class="block-interview-sounders__image"
-                src="../ui/icons/jake-saunders.jpg"
+                src="../ui/icons/jake-saunders.png"
                 alt="jake saunders"
             >
         </div>

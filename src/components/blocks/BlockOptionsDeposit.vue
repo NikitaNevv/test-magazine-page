@@ -2,52 +2,46 @@
     <section class="block-option-deposit">
         <div class="block-option-deposit__content">
             <span class="block-option-deposit__sub-title">
-                registration
+                making a deposit
             </span>
 
             <h3 class="block-option-deposit__title">
-                Register in the system
+                Put initial deposit into your account
             </h3>
 
             <p class="block-option-deposit__text">
-                Provide your first and last name, email address,
-                selected security password, and phone number.
-                After confirming the entered data, you become
-                a full member of the system.
+                Put an initial deposit ($350) into your account
+                before start using the platform. Follow the instructions
+                on the screen to complete.
             </p>
         </div>
 
         <div class="block-option-deposit__box">
-            <div class="block-option-deposit__wrapper">
                 <div class="block-option-deposit__instruction-mail">
                     <span class="block-option-deposit__guide-text">
-                        Enter your email address to get VIP access to the system
+                        To activate your account and start earning,
+                        you must invest an amount not less than the minimum deposit
                     </span>
 
-                <IconArrow class="block-option-deposit__arrow"/>
+                    <IconArrow class="block-option-deposit__arrow"/>
                 </div>
 
-                <div class="block-option-deposit__instruction-mob">
-                    <span class="block-option-deposit__guide-text">
-                        Enter your mobile phone number to verify your identity
-                    </span>
-
-                    <IconArrow class="block-option-deposit__arrow block-option-deposit__arrow--position"/>
-                </div>
-            </div>
-
-            <img class="block-option-deposit__form" src="../ui/icons/form.png" alt="form">
+            <img
+                class="block-option-deposit__form"
+                src="../ui/icons/deposit-form.png"
+                alt="form to fill in credit card data"
+            >
         </div>
     </section>
 </template>
 
 <script>
-export default {name: 'BlockOptionRegister'}
+export default {name: 'BlockOptionsDeposit'}
 </script>
 
 <script setup>
 
-import IconArrow from '../ui/icons/IconArrow.vue'
+import IconArrow from '../ui/icons/IconArrow.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -78,6 +72,7 @@ import IconArrow from '../ui/icons/IconArrow.vue'
         @include onTablet {
             align-items: start;
             text-align: left;
+            order: 2;
         }
     }
 
@@ -127,16 +122,11 @@ import IconArrow from '../ui/icons/IconArrow.vue'
         gap: 4px;
         justify-content: center;
         padding-top: 10px;
+        height: 226px;
 
         @include onTablet {
             padding: 0;
         }
-    }
-
-    &__wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
     }
 
     &__instruction-mail {
@@ -144,7 +134,6 @@ import IconArrow from '../ui/icons/IconArrow.vue'
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-basis: 50%;
         width: 162px;
         padding: 0 10px;
         border: 2px solid $color-accent-positive;
@@ -167,30 +156,11 @@ import IconArrow from '../ui/icons/IconArrow.vue'
 
     &__arrow {
         position: absolute;
-        bottom: 6px;
+        bottom: 60px;
         right: -20px;
         z-index: 2;
         width: 36px;
         height: 26px;
-
-        &--position {
-            top: 24px;
-            right: -20px;
-            z-index: 2;
-        }
-    }
-
-    &__instruction-mob {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        flex-basis: 50%;
-        align-items: center;
-        width: 163px;
-        padding: 0 10px;
-        border: 2px solid $color-accent-positive;
-        background: rgba(56, 255, 24, 0.02);
-        border-radius: 4px;
     }
 
     &__form {

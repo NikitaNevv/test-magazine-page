@@ -16,7 +16,6 @@ export default {name: 'ButtonMainLink'}
 
 <style lang="scss" scoped>
     .button-main-link {
-
         display: flex;
         justify-content: center;
         align-items: center;

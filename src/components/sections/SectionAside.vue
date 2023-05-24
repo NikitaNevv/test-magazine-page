@@ -3,7 +3,7 @@
         <h2 class="section-aside__title">trending now</h2>
 
         <a class="section-aside__link" href="#">
-            <img class="section-aside__link-img" src="../ui/icons/walmart.jpg" alt="image of walmart">
+            <img class="section-aside__link-img" src="../ui/icons/walmart.png" alt="image of walmart">
 
             <span class="section-aside__link-text">
                 Walmart hiring crypto expert to develop digital currency strategy
@@ -11,7 +11,7 @@
         </a>
 
         <a class="section-aside__link" href="#">
-            <img class="section-aside__link-img" src="../ui/icons/mortgage.jpg" alt="image of house with coin">
+            <img class="section-aside__link-img" src="../ui/icons/mortgage.png" alt="image of house with coin">
 
             <span class="section-aside__link-text">
                 Second-largest U.S. mortgage lender will accept payment in bitcoin
@@ -19,7 +19,7 @@
         </a>
 
         <a class="section-aside__link" href="#">
-            <img class="section-aside__link-img" src="../ui/icons/amazon-bitcoin.jpg" alt="image of amazon and bitcoin">
+            <img class="section-aside__link-img" src="../ui/icons/amazon-bitcoin.png" alt="image of amazon and bitcoin">
 
             <span class="section-aside__link-text">
                 Amazon may soon allow users to pay in cryptocurrencies like Bitcoin
@@ -27,7 +27,7 @@
         </a>
 
         <a class="section-aside__link" href="#">
-            <img class="section-aside__link-img" src="../ui/icons/stocks.jpg" alt="image of stocks graphic">
+            <img class="section-aside__link-img" src="../ui/icons/stocks.png" alt="image of stocks graphic">
 
             <span class="section-aside__link-text">
                 Indian stock market turns world beaters with RBI in ‘whatever it takes’ mode
@@ -35,7 +35,7 @@
         </a>
 
         <a class="section-aside__link" href="#">
-            <img class="section-aside__link-img" src="../ui/icons/bitcoin.jpg" alt="image of bitcoin">
+            <img class="section-aside__link-img" src="../ui/icons/bitcoin.png" alt="image of bitcoin">
 
             <span class="section-aside__link-text">
                 Bitcoin in longest winning streak in 2022 as crypto rebounds
@@ -54,7 +54,6 @@ export default {name: 'SectionAside'}
 
 <style lang="scss" scoped>
 .section-aside {
-    display: flex;
     flex-direction: column;
     gap: 15px;
 
