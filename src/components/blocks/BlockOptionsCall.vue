@@ -29,7 +29,7 @@
 export default {name: 'BlockOptionsCall'}
 </script>
 
-<script setup lang="ts">
+<script setup>
 
 </script>
 

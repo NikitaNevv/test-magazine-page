@@ -1,5 +1,5 @@
 <template>
-    <section class="section-aside">
+    <aside class="section-aside">
         <h2 class="section-aside__title">trending now</h2>
 
         <a class="section-aside__link" href="#">
@@ -41,14 +41,14 @@
                 Bitcoin in longest winning streak in 2022 as crypto rebounds
             </span>
         </a>
-    </section>
+    </aside>
 </template>
 
 <script>
 export default {name: 'SectionAside'}
 </script>
 
-<script setup lang="ts">
+<script setup >
 
 </script>
 
@@ -56,6 +56,7 @@ export default {name: 'SectionAside'}
 .section-aside {
     flex-direction: column;
     gap: 15px;
+    padding-bottom: 600px;
 
     &__title {
        text-transform: uppercase;

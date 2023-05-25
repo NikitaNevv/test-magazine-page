@@ -35,11 +35,11 @@
     </header>
 </template>
 
-<script lang="ts">
+<script>
 export default {name: 'SectionHeaderDesk'}
 </script>
 
-<script setup lang="ts">
+<script setup >
 import BurgerMenu from '../ui/icons/BurgerMenu.vue'
 </script>
 
