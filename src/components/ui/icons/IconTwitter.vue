@@ -4,6 +4,6 @@
     </svg>
 </template>
 
-<script lang="ts">
+<script >
 export default {name: 'IconTwitter'}
 </script>

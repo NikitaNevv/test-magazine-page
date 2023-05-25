@@ -21,7 +21,7 @@
 export default {name: 'BlockInterviewSounders'}
 </script>
 
-<script setup lang="ts">
+<script setup >
 
 </script>
 

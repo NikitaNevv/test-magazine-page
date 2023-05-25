@@ -38,11 +38,11 @@
     </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {name: ''}
 </script>
 
-<script setup lang="ts">
+<script setup >
 
 import IconInstagram from '../ui/icons/IconInstagram.vue';
 import IconTwitter from '../ui/icons/IconTwitter.vue';

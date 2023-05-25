@@ -17,11 +17,11 @@
     </section>
 </template>
 
-<script lang="ts">
+<script>
 export default {name: 'BlockInterviewWarning'}
 </script>
 
-<script setup lang="ts">
+<script setup >
 
 </script>
 
